@@ -1,0 +1,29 @@
+.ImageBox{
+
+  img{
+    border: 1px dashed transparent;
+  }
+
+  div:first-of-type{
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+  }
+
+  div:last-of-type{
+    transform: translateY(100%);
+    transition: transform .4s ease-in-out;
+  }
+
+  &:hover{
+    img{
+      border-color: rgb(241, 81, 81);
+    }
+    div:first-of-type{
+      opacity: 0;
+    }
+    div:last-of-type{
+      transform: translateY(0);
+    }
+  }
+
+}
