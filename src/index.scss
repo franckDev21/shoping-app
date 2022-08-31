@@ -17,7 +17,12 @@ code {
 @tailwind utilities;
 
 .bg-gradiant{
+  transition: all .3s ease-in-out;
   background: -webkit-linear-gradient( 0deg, rgb(250,65,75) 0%, rgb(252,91,111) 49%, rgb(253,124,80) 100%);
+}
+
+.bg-gradiant-reverse{
+  background: -webkit-linear-gradient( 0deg, rgb(253,124,80) 0%, rgb(252,91,111) 49%, rgb(250,65,75) 100%) !important;
 }
 
 .clean-btn{ 

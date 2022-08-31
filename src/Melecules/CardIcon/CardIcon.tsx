@@ -41,6 +41,7 @@ const CardIcon = () => {
         </svg>
       </MyIcon>
       <div className="flex ml-3 flex-col justify-start items-start -translate-y-0.5">
+        <span className="absolute top-0 bg-primary -left-6 px-[.3rem] rounded-full text-white text-xs">0</span>
         <span className="font-semibold">My Cart</span>
         <span className="text-xs text-gray-500">$0.00</span>
       </div>
