@@ -7,12 +7,12 @@ import Title from '../../Atoms/Title/Title'
 import ImageBox from '../../Melecules/ImageBox/ImageBox'
 import InputGroup from '../../Melecules/InputGroup/InputGroup'
 import ProductItem from '../../Melecules/ProductItem/ProductItem'
-import { products } from '../../Utils/data'
 
 import Phone from '../../image/cache/catalog/category/1-190x190.png'
 import Card from '../../Melecules/Card/Card'
 import HotCategory from '../../Organismes/HotCategory/HotCategory'
 import AuthLayout from '../../Templates/AuthLayout/AuthLayout'
+import { products } from '../../Utils/data'
 
 type HomeType = {}
 
@@ -38,7 +38,7 @@ const Home:FC<HomeType> = () => {
 
         <Title className='text-center'>Title</Title>
 
-        <Button onClick={handleOnClick}>Mon bouton</Button>
+        <Button onClick={handleOnClick} className='py-10'>Mon bouton</Button>
 
         <MyIcon className='bg-white shadow-md'>
           <svg className='w-6 h-6' viewBox="0 0 129 129" id="heart">

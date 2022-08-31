@@ -4,16 +4,14 @@ import style from './style.module.scss'
 type ButtonType = {
   children : ReactNode,
   className ?: string,
-  rounded ?: number,
   onClick ?: (e: any) => void
 }
 
-const Button: FC<ButtonType> = ({ children, className = '', rounded = 1.2, onClick }) => {
+const Button: FC<ButtonType> = ({ children, className = '', onClick }) => {
   return (
     <button 
       onClick={onClick}
-      style={{ borderRadius: `${rounded}rem` }}
-      className={`clean-btn bg-gradiant text-white ${className} ${style.button}`}>
+      className={`clean-btn bg-gradiant text-white  ${style.button} ${className} `}>
       {children}
     </button>
   )
