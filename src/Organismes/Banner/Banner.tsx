@@ -12,7 +12,7 @@ interface BannerProps {
 
 const Banner:FC<BannerProps> = ({ className }) => {
   return (
-    <div className={`banner mb-20 smartphone:h-auto shadow-lg w-full bg-gray-300 ${className}`}>
+    <div className={`banner smartphone:h-auto shadow-lg w-full bg-gray-300 ${className}`}>
        <Carousel interval={6000} 
         showStatus={false} 
         showIndicators 

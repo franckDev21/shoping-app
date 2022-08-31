@@ -7,12 +7,13 @@ type CardType = {
   children ?: ReactNode,
   header ?: ReactNode,
   className ?: string,
-  line ?: boolean
+  line ?: boolean,
+  style ?: any
 }
 
-const Card:FC<CardType> = ({ name='', children, header, className, line = false }) => {
+const Card:FC<CardType> = ({ name='', children, header, className, line = false, style={} }) => {
   return (
-    <div className={`${className} bg-white py-5 px-5 rounded-md shadow-lg`}>
+    <div style={style} className={`bg-white py-5 px-5 rounded-md shadow-lg ${className}`}>
       <Title className='flex justify-between items-center text-2xl text-bold text-gray-700'>
         <Text>{name}</Text>
         {header}

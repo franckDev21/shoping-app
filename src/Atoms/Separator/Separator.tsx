@@ -5,9 +5,9 @@ interface SeparatorProps{
   children?: ReactNode;
 }
 
-const Separator: FC<SeparatorProps> = ({ className, children }) => {
+const Separator: FC<SeparatorProps> = ({ className = '', children }) => {
   return (
-    <span className={`translate-y-0.5 inline-block h-3.5 w-[1.4px] bg-gray-400 mx-6 ${className ?? className}`}>
+    <span className={`translate-y-0.5 inline-block h-3.5 w-[1.4px] bg-gray-400 mx-6 ${className}`}>
       {children}
     </span>
   )
