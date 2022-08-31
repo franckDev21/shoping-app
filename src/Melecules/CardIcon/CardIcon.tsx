@@ -4,7 +4,7 @@ import MyIcon from "../../Atoms/MyIcon/MyIcon";
 const CardIcon = () => {
   return (
     <div className="flex items-start">
-      <MyIcon>
+      <MyIcon className="relative">
         <svg
           fill="currentColor"
           className="w-6 h-6"
@@ -39,8 +39,9 @@ const CardIcon = () => {
             C96.915,15.24,80.253,0,60.008,0c-20.244,0-36.907,15.24-39.2,34.868C20.807,40.433,28.115,40.647,28.027,34.868z"
           />
         </svg>
+        <span className="absolute top-0 bg-primary left-6 px-[.3rem] rounded-full text-white text-xs md:hidden">4</span>
       </MyIcon>
-      <div className="flex ml-3 flex-col justify-start items-start -translate-y-0.5">
+      <div className="hidden md:flex ml-3 flex-col justify-start items-start -translate-y-0.5">
         <span className="absolute top-0 bg-primary -left-6 px-[.3rem] rounded-full text-white text-xs">0</span>
         <span className="font-semibold">My Cart</span>
         <span className="text-xs text-gray-500">$0.00</span>

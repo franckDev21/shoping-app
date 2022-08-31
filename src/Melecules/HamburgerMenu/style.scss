@@ -40,6 +40,35 @@
       }
     }
   }
+
+  &:hover{
+    span{
+      &::after{
+        transform: scaleX(0);
+      }
+    }
+  }
+
+  &--principal{
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    span{
+      &::after{
+        transform: scaleX(0);
+        background-color: rgb(250,65,75);
+      }
+    }
+
+    &:hover{
+      span{
+        &::after{
+          transform: scaleX(1);
+        }
+      }
+    }
+
+  }
 }
 
 .anim{

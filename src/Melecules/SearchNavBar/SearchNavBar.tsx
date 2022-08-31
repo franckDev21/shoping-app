@@ -9,24 +9,27 @@ import { Link } from "react-router-dom";
 
 import ImgSeparator from "../../image/separator.png";
 import SelectInput from "../../Atoms/SelectIput/SelectInput";
+import Text from "../../Atoms/Text/Text";
+import { FiSearch } from "react-icons/fi";
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 interface SearchNavBarProps {
   className?: string;
 }
 
 const SearchNavBar: FC<SearchNavBarProps> = ({ className = "" }) => {
-
-  const [hover,setHover] = useState(false);
+  const [hover, setHover] = useState(false);
 
   return (
     <div className={`${className} border-b`}>
-      <div className="container flex items-center justify-between py-5">
-        <Link to="/">
+      <div className="container block sm:flex items-center justify-between pt-2 pb-3 md:py-5">
+        <Link to="/" className="logo-lg hidden md:block">
           <img src={Logo} alt="logo" />
         </Link>
 
-        <div className="flex items-center pr-0.5 -translate-x-2 w-[55%] border-2 border-gray-100 rounded-3xl">
+        <div className="flex items-center pr-0.5 md:-translate-x-2 w-full md:w-[50%] justify-between lg:justify-start lg:w-[55%] border-2 border-gray-100 rounded-3xl">
           <SelectInput
+            className="hidden smartphone:inline-block w-[34%] "
             style={{
               backgroundImage: `url(${ImgSeparator})`,
               backgroundRepeat: "no-repeat",
@@ -35,16 +38,22 @@ const SearchNavBar: FC<SearchNavBarProps> = ({ className = "" }) => {
           >
             <option>Categories</option>
           </SelectInput>
-          <InputFile className="w-[50%] py-2.5 bg-white" placeholder="Search" />
+          <InputFile className="w-[80%] smartphone:w-[50%] rounded-full py-2.5 bg-white" placeholder="Search" />
           <Button
             onHover={() => setHover(true)}
             onLeave={() => setHover(false)}
-            className={`w-[16%] pt-[.45rem] pb-[.6rem] rounded-3xl ${hover ? 'bg-gradiant-reverse':''}`}>
-            search
+            className={` h-10 w-10 flex justify-center items-center lg:inline-block rounded-full  lg:h-auto lg:w-[16%] lg:pt-[.45rem] lg:pb-[.6rem] lg:px-4 lg:rounded-3xl ${
+              hover ? "bg-gradiant-reverse" : ""
+            }`}
+          >
+            <Text className="hidden lg:inline-block">search</Text>
+            <Text className="lg:hidden">
+              <FiSearch className="w-5 h-5" />
+            </Text>
           </Button>
         </div>
-
-        <div className="flex items-center justify-between w-[22%]">
+          
+        <div className="flex items-center justify-end md:justify-between pt-3 sm:pt-0 pl-2 lg:pt-3 pr-4 md:pt-0 lg:w-[22%]">
           <HeartIcon />
           <UserIcon />
           <CardIcon />

@@ -3,7 +3,7 @@ import MyIcon from "../../Atoms/MyIcon/MyIcon";
 
 const HeartIcon = () => {
   return (
-    <MyIcon>
+    <MyIcon className="mr-3 lg:mr-0">
       {/* <AiOutlineHeart className='h-6 w-6' /> */}
       <svg className="w-6 h-6" viewBox="0 0 129 129" id="heart">
         <path

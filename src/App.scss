@@ -1,11 +1,19 @@
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body{
+  &::-webkit-scrollbar{
+    width: 9px;
   }
-  to {
-    transform: rotate(360deg);
+  &::-webkit-scrollbar-track{
+    background-color: #3333 ;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: rgba(250, 65, 74, 0.715);
+    border-radius: 5px;
+  }
+  *{
+    user-select: none;
   }
 }
+
 
 .parent-flag-lang{
   .flag-lang{

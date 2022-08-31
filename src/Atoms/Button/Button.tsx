@@ -15,7 +15,7 @@ const Button: FC<ButtonType> = ({ children, className = '', onClick, onHover, on
       onClick={onClick}
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
-      className={`clean-btn bg-gradiant text-white py-3 px-6  ${style.button} ${className} `}>
+      className={`clean-btn bg-gradiant text-white  ${style.button} ${className} `}>
       {children}
     </button>
   )

@@ -3,7 +3,7 @@ import MyIcon from "../../Atoms/MyIcon/MyIcon";
 
 const UserIcon = () => {
   return (
-    <MyIcon>
+    <MyIcon className="mr-3 lg:mr-0">
       <svg className="w-6 h-6" viewBox="-42 0 512 512.001" id="heart">
         <path
           fill="currentColor"

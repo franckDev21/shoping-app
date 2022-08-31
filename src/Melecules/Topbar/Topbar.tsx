@@ -6,7 +6,7 @@ import Lang from "../Lang/Lang";
 
 const Topbar = () => {
   return (
-    <section className="text-sm bg-gray-100 py-2.5 hidden sm:block">
+    <section className="text-sm bg-gray-100 py-2.5 hidden md:block">
       <div className="container flex justify-between items-center">
         <div className="left">
           <span className="mr-3 inline-flex items-center">
