@@ -1,8 +1,12 @@
 import Product from "../Models/product.model";
-import Product1 from '../image/cache/catalog/product/37-272x272.jpg'
-import Product2 from '../image/cache/catalog/product/38-272x272.jpg'
 import Category from "../Models/category.model";
 import { DropdownItem } from "../types/allType";
+
+import cat1 from '../image/cat1.png'
+import cat2 from '../image/cat2.png'
+import cat3 from '../image/cat3.png'
+import cat4 from '../image/cat4.png'
+import cat5 from '../image/cat5.png'
 
 export const products: Product[] = [
   {
@@ -10,7 +14,7 @@ export const products: Product[] = [
     name : 'I Watch apple',
     price : 1235,
     description: 'desc',
-    images : [Product1,Product2],
+    images : [cat1,cat2],
     countStart : 4
   }
 ]
@@ -19,28 +23,28 @@ export const products: Product[] = [
 export const categories: Category[] = [
   {
     id : 1,
-    name : 'category name 1',
-    image : Product1
+    name : 'Women',
+    image : cat1
   },
   {
     id : 2,
-    name : 'category name 2',
-    image : Product1
+    name : 'Desktops',
+    image : cat2
   },
   {
     id : 3,
-    name : 'category name 3',
-    image : Product1
+    name : 'Laptops & Notebooks',
+    image : cat3
   },
   {
     id : 4,
-    name : 'category name 4',
-    image : Product1
+    name : 'Components',
+    image : cat4
   },
   {
     id : 5,
-    name : 'category name 5',
-    image : Product1
+    name : 'Tables',
+    image : cat5
   },
 ]
 
