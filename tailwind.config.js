@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'rgb(250,65,75)'
+        primary: 'rgb(250,65,75)',
+        gradiantEnd: 'rgb(253,124,80)'
       },
       screens: {
         'smartphone': '380px',

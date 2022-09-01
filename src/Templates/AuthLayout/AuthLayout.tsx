@@ -6,7 +6,7 @@ type AuthLayoutType = {
 
 const AuthLayout:FC<AuthLayoutType> = ({ children }) => {
   return (
-    <main className='overflow-hidden'>
+    <main className='overflow-hidden bg-gray-100 min-h-screen'>
       {children}
     </main>
   )
