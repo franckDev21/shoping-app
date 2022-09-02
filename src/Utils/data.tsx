@@ -19,6 +19,8 @@ import cat2 from '../image/cat2.png'
 import cat3 from '../image/cat3.png'
 import cat4 from '../image/cat4.png'
 import cat5 from '../image/cat5.png'
+import ai1 from '../image/ai1.jpg'
+import ai2 from '../image/ai2.jpg'
 
 export const products: Product[] = [
   {
@@ -71,6 +73,15 @@ export const products: Product[] = [
     countStart : 4
   }
 ]
+
+export const oneProduct: Product = {
+  id : 7,
+  name : 'Ai inteligence',
+  price : 104,
+  description: 'desc',
+  images : [ai1,ai2],
+  countStart : 3
+}
 
 
 export const categories: Category[] = [

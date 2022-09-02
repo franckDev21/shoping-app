@@ -11,9 +11,10 @@ import './style.scss';
 type ProductCardType = {
   className?: string;
   product: Product;
+  reduction ?: boolean
 };
 
-const ProductCard: FC<ProductCardType> = ({ className = "", product }) => {
+const ProductCard: FC<ProductCardType> = ({ className = "", product, reduction }) => {
   const navigate = useNavigate();
 
   const goToPage = (url: string): void => {
@@ -33,8 +34,10 @@ const ProductCard: FC<ProductCardType> = ({ className = "", product }) => {
 
   return (
     <div
-      className={`product-card flex-none text-center bg-gray-100 rounded-md py-4 ${className}`}
+      className={`product-card relative flex-none text-center bg-gray-100 rounded-md py-4 ${className}`}
     >
+      {reduction && <span className="absolute z-20 rounded px-2.5 text-xs py-0.5 bg-gray-800 text-white top-2 right-2.5">15%</span>}
+
       <div className="cursor-pointer product-card__screen min-h-[15rem]">
         <IconProduct className="icons absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" />
         {product.images.map((image,i) => (

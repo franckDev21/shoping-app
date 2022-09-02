@@ -6,6 +6,13 @@ import AuthLayout from "../../Templates/AuthLayout/AuthLayout";
 import LatestBlog from "../../Organismes/LatestBlog/LatestBlog";
 import Partner from "../../Organismes/Partner/Partner";
 import TrendingProduct from "../../Organismes/TrendingProduct/TrendingProduct";
+import PubComponent from "../../Melecules/PubComponent/PubComponent";
+import PubCard from "../../Melecules/PubCard/PubCard";
+
+import Flyer from '../../image/flyer.jpg';
+import SpecialProduct from "../../Organismes/SpecialProduct/SpecialProduct";
+import DealOfTheDayCard from "../../Organismes/DealOfTheDayCard/DealOfTheDayCard";
+import CategoriesProduct from "../../Organismes/CategoriesProduct/CategoriesProduct";
 
 const All = () => {
   return (
@@ -37,6 +44,22 @@ const All = () => {
     >
       {/* content  */}
       <TrendingProduct />
+
+      {/* pub row */}
+      <PubComponent className="mt-20" />
+
+      {/* Deal Of The Day */}
+      <DealOfTheDayCard className="mt-14" />
+
+      {/* Categories Products */}
+      <CategoriesProduct className="mt-14"   />
+
+      {/* flyer pub */}
+      <PubCard url={Flyer} className='mt-20' />
+
+      {/* Deal Of The Day */}
+      <SpecialProduct className="mt-14" />
+
     </AuthLayout>
   );
 };

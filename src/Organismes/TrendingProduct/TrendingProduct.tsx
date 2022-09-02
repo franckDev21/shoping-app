@@ -14,6 +14,7 @@ const TrendingProduct: FC<TrendingProductType> = ({ className }) => {
   return (
     <div className={`${className}`}>
       <Card
+        classTitle='text-[1.68rem]'
         name="Trending Product"
         line
         header={

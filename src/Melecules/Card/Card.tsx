@@ -9,6 +9,7 @@ type CardType = {
   className?: string;
   line?: boolean;
   style?: any;
+  classTitle ?: string
 };
 
 const Card: FC<CardType> = ({
@@ -18,6 +19,7 @@ const Card: FC<CardType> = ({
   className,
   line = false,
   style = {},
+  classTitle=''
 }) => {
   return (
     <div
@@ -25,7 +27,7 @@ const Card: FC<CardType> = ({
       className={`${className} bg-white py-5 px-5 rounded-md shadow-lg`}
     >
       <div className="flex justify-between items-center text-2xl text-bold text-gray-700">
-        <Title>{name}</Title>
+        <Title className={`${classTitle}`}>{name}</Title>
         <div className="flex items-center">{header}</div>
       </div>
       {line && (
