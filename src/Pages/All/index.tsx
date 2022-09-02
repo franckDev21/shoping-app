@@ -6,6 +6,7 @@ import HotCategory from "../../Organismes/HotCategory/HotCategory";
 import OutService from "../../Organismes/OutService/OutService";
 import AuthLayout from "../../Templates/AuthLayout/AuthLayout";
 import LatestBlog from "../../Organismes/LatestBlog/LatestBlog";
+import Partner from "../../Organismes/Partner/Partner";
 
 const All = () => {
   return (
@@ -26,6 +27,10 @@ const All = () => {
 
       <div className="container mb-10">
         <LatestBlog />
+      </div>
+
+      <div className="container">
+        <Partner />
       </div>
 
       <Footer className="bg-white" />
