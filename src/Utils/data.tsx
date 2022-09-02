@@ -27,10 +27,11 @@ export const products: Product[] = [
     price : 123.20,
     description: 'desc',
     images : [montre1,montre2],
-    countStart : 2
+    countStart : 2,
+    reductionPrice: 103
   },
   {
-    id : 1,
+    id : 2,
     name : 'Cras dapibus purus malesuada iaculis imperdiet',
     price : 122.00,
     description: 'desc',
@@ -38,12 +39,12 @@ export const products: Product[] = [
     countStart : 1
   },
   {
-    id : 1,
-    name : 'lacinia nisl sed nibh vulputate',
+    id : 3,
+    name : 'lacinia nisl sed ibh vulputate',
     price : 143.05,
     description: 'desc',
     images : [frigo1,frigo2],
-    countStart : 4
+    countStart : 4,
   },
   {
     id : 4,
@@ -54,7 +55,7 @@ export const products: Product[] = [
     countStart : 4
   },
   {
-    id : 1,
+    id : 5,
     name : 'Fusce tristique cursus facilisis',
     price : 602,
     description: 'desc',
@@ -62,7 +63,7 @@ export const products: Product[] = [
     countStart : 4
   },
   {
-    id : 1,
+    id : 6,
     name : 'MacBook Pro',
     price : 2000,
     description: 'desc',

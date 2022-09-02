@@ -1,14 +1,15 @@
-export const extraiText = (text: string, maxLength: number = 26) => {
+export const extraiText = (text: string, maxLength: number = 30) => {
   let newContent = [];
   for (let i = 0; i < text.length; i++) {
-    if (i <= maxLength) {
+    if (i+1 <= (maxLength - 3)) {
       newContent.push(text[i]);
     }
   }
-  return {
-    content: newContent.join(""),
-    isOverflow: text.length > maxLength,
-  };
+
+  if(text.length >= (maxLength - 3)){
+    return newContent.join("")+'...'
+  }
+  return text
 };
 
 export const formatCurrency = (number: number,currency: string = 'USD') => {

@@ -7,7 +7,7 @@ type TitleType = {
 
 const Title: FC<TitleType> = ({ children, className }) => {
   return (
-    <h1 className={` text-gray-800 font-semibold text-3xl ${className}`}>
+    <h1 className={`${className} text-gray-800 font-semibold text-3xl`}>
       {children}
     </h1>
   )

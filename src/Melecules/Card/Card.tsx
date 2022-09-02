@@ -22,7 +22,7 @@ const Card: FC<CardType> = ({
   return (
     <div
       style={style}
-      className={`bg-white py-5 px-5 rounded-md shadow-lg ${className}`}
+      className={`${className} bg-white py-5 px-5 rounded-md shadow-lg`}
     >
       <div className="flex justify-between items-center text-2xl text-bold text-gray-700">
         <Title>{name}</Title>

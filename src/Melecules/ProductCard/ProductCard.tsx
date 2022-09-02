@@ -50,7 +50,7 @@ const ProductCard: FC<ProductCardType> = ({ className = "", product }) => {
         onClick={(e) => goToPage(`/product/${product.id}/show`)}
         className="cursor-pointer transition hover:text-red-400"
       >
-        {extraiText(product.name).isOverflow ? extraiText(product.name).content+'...' : product.name }
+        {extraiText(product.name)}
       </Text>
       <Text className="mt-2 font-extrabold text-gray-800">
         

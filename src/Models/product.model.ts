@@ -4,5 +4,6 @@ export default interface Product {
   images : string[],
   description : string,
   price : number,
+  reductionPrice ?: number|null,
   countStart : number
 } 

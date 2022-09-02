@@ -26,8 +26,8 @@ const AuthLayout: FC<AuthLayoutType> = ({
 
       <main className="mb-10">
         <div className="container flex">
-          <SideBar className="w-[16.375rem] mr-4">{sideBar}</SideBar>
-          <Content className="w-[calc(100%-16.375rem)] ml-4">{children}</Content>
+          <SideBar className="w-[16.475rem] mr-4">{sideBar}</SideBar>
+          <Content className="w-[calc(100%-16.475rem)] ml-4">{children}</Content>
         </div>
       </main>
 
