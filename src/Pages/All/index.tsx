@@ -5,6 +5,7 @@ import Header from "../../Organismes/Header/Header";
 import HotCategory from "../../Organismes/HotCategory/HotCategory";
 import OutService from "../../Organismes/OutService/OutService";
 import AuthLayout from "../../Templates/AuthLayout/AuthLayout";
+import LatestBlog from "../../Organismes/LatestBlog/LatestBlog";
 
 const All = () => {
   return (
@@ -21,6 +22,10 @@ const All = () => {
       {/* out categories */}
       <div className="container mb-10">
         <HotCategory className='my-5' />
+      </div>
+
+      <div className="container mb-10">
+        <LatestBlog />
       </div>
 
       <Footer className="bg-white" />
