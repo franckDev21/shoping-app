@@ -40,7 +40,7 @@ body {
 .anim-overlay {
   position: relative;
   &::before {
-    @include pseudo;
+    @include pseudo; 
     transform: scaleY(0);
     z-index: 1;
   }
