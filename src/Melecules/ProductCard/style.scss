@@ -1,0 +1,33 @@
+.product-card{
+  &__screen{
+    position: relative;
+    .icons{
+      opacity: 0;
+      z-index: 2;
+    }
+    img{
+      position: absolute;
+      transition: opacity .4s ease-in-out;
+      &:nth-child(1){
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+      }
+      &:nth-child(2){
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+    &:hover{
+      img{
+        &:nth-child(1){
+          opacity: 1;
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+      }
+      .icons{opacity: 1;}
+    }
+  }
+}

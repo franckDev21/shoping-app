@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, Fragment } from "react";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import MyIcon from "../../Atoms/MyIcon/MyIcon";
@@ -12,6 +12,7 @@ type TrendingProductType = {
 };
 
 const TrendingProduct: FC<TrendingProductType> = ({ className }) => {
+
   return (
     <div className={`${className}`}>
       <Card
@@ -47,15 +48,9 @@ const TrendingProduct: FC<TrendingProductType> = ({ className }) => {
         }
       >
         <div className="grid grid-cols-3 gap-8">
-          <div className="">
-            <ProductCard  product={products[0]} className="my-4" />
-          </div>
-          <div className="">
-            <ProductCard product={products[0]} className="my-4" />
-          </div>
-          <div className="">
-            <ProductCard product={products[0]} className="my-4" />
-          </div>
+          {products.map((product,i) => (
+            <ProductCard key={i} product={product} className="my-4" />
+          ))}
         </div>
       </Card>
     </div>

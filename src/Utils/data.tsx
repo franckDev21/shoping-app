@@ -3,6 +3,12 @@ import Category from "../Models/category.model";
 import { DropdownItem } from "../types/allType";
 
 import cat1 from '../image/cat1.png'
+import montre1 from '../image/montre1.jpg'
+import montre2 from '../image/montre2.jpg'
+import jupe1 from '../image/jupe1.jpg'
+import jupe2 from '../image/jupe2.jpg'
+import frigo1 from '../image/frigo1.jpg'
+import frigo2 from '../image/frigo2.jpg'
 import cat2 from '../image/cat2.png'
 import cat3 from '../image/cat3.png'
 import cat4 from '../image/cat4.png'
@@ -11,10 +17,26 @@ import cat5 from '../image/cat5.png'
 export const products: Product[] = [
   {
     id : 1,
-    name : 'I Watch apple',
-    price : 1235,
+    name : 'Nullam molestie accumsan justo',
+    price : 123.20,
     description: 'desc',
-    images : [cat1,cat2],
+    images : [montre1,montre2],
+    countStart : 2
+  },
+  {
+    id : 1,
+    name : 'Cras dapibus purus malesuada iaculis imperdiet',
+    price : 122.00,
+    description: 'desc',
+    images : [jupe1,jupe2],
+    countStart : 1
+  },
+  {
+    id : 1,
+    name : 'lacinia nisl sed nibh vulputate',
+    price : 143.05,
+    description: 'desc',
+    images : [frigo1,frigo2],
     countStart : 4
   }
 ]

@@ -11,7 +11,6 @@ import ImgSeparator from "../../image/separator.png";
 import SelectInput from "../../Atoms/SelectIput/SelectInput";
 import Text from "../../Atoms/Text/Text";
 import { FiSearch } from "react-icons/fi";
-import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 interface SearchNavBarProps {
   className?: string;
