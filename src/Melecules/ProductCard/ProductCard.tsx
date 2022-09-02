@@ -1,7 +1,5 @@
 import React, { FC, Fragment } from 'react'
-import { AiFillStar } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom'
-import { JsxElement } from 'typescript'
 import MyImage from '../../Atoms/MyImage/MyImage'
 import Text from '../../Atoms/Text/Text'
 import Product from '../../Models/product.model'
