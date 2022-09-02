@@ -18,7 +18,7 @@ const CardBlog: FC<CardBlogType> = ({ className = "", imgUrl, content='', title=
   return (
     <div className={`${className} card-blog`}>
       {imgUrl && (
-        <div className={`card-blog__img relative w-full h-[15.125rem] bg-green-600`}>
+        <div className={`card-blog__img relative w-full h-[15.125rem]`}>
           <img
             className="absolute w-full object-cover left-0 top-0 bottom-0 right-0 h-full"
             src={imgUrl}
