@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import MyImage from "../../Atoms/MyImage/MyImage";
 import Product from "../../Models/product.model";
-import { extraiText } from "../../Utils/functions";
+import { extraiText, formatCurrency } from "../../Utils/functions";
 
 type ProductItemType = {
   className ?: string,
@@ -23,7 +23,7 @@ const ProductItem:FC<ProductItemType> = ({ className='',reduction=false, product
       <div>
         <h4 className="mb-1 cursor-pointer hover:text-primary transition">{extraiText(product.name,16)}</h4>
         <p className="flex items-center">
-          <span className="font-semibold mr-2">{product.price}</span>{" "}
+          <span className="font-semibold mr-2">{formatCurrency(product.price)}</span>{" "}
           {reduction && <span className="line-through text-sm text-gray-400">$122.00</span>}
         </p>
       </div>

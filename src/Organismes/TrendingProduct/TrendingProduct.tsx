@@ -1,9 +1,7 @@
 import React, { FC, Fragment } from "react";
-import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import MyIcon from "../../Atoms/MyIcon/MyIcon";
-import Text from "../../Atoms/Text/Text";
 import Card from "../../Melecules/Card/Card";
+import NavCard from "../../Melecules/NavCard/NavCard";
 import ProductCard from "../../Melecules/ProductCard/ProductCard";
 import { products } from "../../Utils/data";
 
@@ -30,20 +28,7 @@ const TrendingProduct: FC<TrendingProductType> = ({ className }) => {
               <Link to="/">Latest</Link>
             </nav>
 
-            <Text className="flex items-center">
-              <MyIcon
-                children={<BiChevronLeft />}
-                className="mr-2 hover:bg-red-500 hover:text-white transition ease-in-out duration-300"
-                width={27}
-                height={27}
-              />
-              <MyIcon
-                children={<BiChevronRight />}
-                className="hover:bg-red-500 hover:text-white transition ease-in-out duration-300"
-                width={27}
-                height={27}
-              />
-            </Text>
+            <NavCard />
           </>
         }
       >

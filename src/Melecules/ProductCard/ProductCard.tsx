@@ -53,8 +53,7 @@ const ProductCard: FC<ProductCardType> = ({ className = "", product }) => {
         {extraiText(product.name)}
       </Text>
       <Text className="mt-2 font-extrabold text-gray-800">
-        
-        ${formatCurrency(product.price)}
+        {formatCurrency(product.price)}
       </Text>
     </div>
   );
