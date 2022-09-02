@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import MyImage from "../../Atoms/MyImage/MyImage";
 import Text from "../../Atoms/Text/Text";
 import Product from "../../Models/product.model";
-import { extraiText } from "../../Utils/functions";
+import { extraiText, formatCurrency } from "../../Utils/functions";
 import IconProduct from "../IconProduct/IconProduct";
 import StarIcon from "../StarIcon/StarIcon";
 import './style.scss';
@@ -53,7 +53,8 @@ const ProductCard: FC<ProductCardType> = ({ className = "", product }) => {
         {extraiText(product.name).isOverflow ? extraiText(product.name).content+'...' : product.name }
       </Text>
       <Text className="mt-2 font-extrabold text-gray-800">
-        ${product.price}
+        
+        ${formatCurrency(product.price)}
       </Text>
     </div>
   );

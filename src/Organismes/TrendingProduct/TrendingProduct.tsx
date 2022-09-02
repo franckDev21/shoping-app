@@ -49,7 +49,7 @@ const TrendingProduct: FC<TrendingProductType> = ({ className }) => {
       >
         <div className="grid grid-cols-3 gap-8">
           {products.map((product,i) => (
-            <ProductCard key={i} product={product} className="my-4" />
+            <ProductCard key={i} product={product} />
           ))}
         </div>
       </Card>

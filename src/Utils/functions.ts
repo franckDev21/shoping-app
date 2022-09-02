@@ -10,3 +10,7 @@ export const extraiText = (text: string, maxLength: number = 26) => {
     isOverflow: text.length > maxLength,
   };
 };
+
+export const formatCurrency = (number: number,currency: string = 'USD') => {
+ return (new Intl.NumberFormat("de-DE", {style: "currency", currency}).format(number)).replace('$','');
+}

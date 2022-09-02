@@ -9,6 +9,12 @@ import jupe1 from '../image/jupe1.jpg'
 import jupe2 from '../image/jupe2.jpg'
 import frigo1 from '../image/frigo1.jpg'
 import frigo2 from '../image/frigo2.jpg'
+import eau1 from '../image/eau1.jpg'
+import eau2 from '../image/eau2.jpg'
+import talon1 from '../image/talon1.jpg'
+import talon2 from '../image/talon2.jpg'
+import sac from '../image/sac.jpg'
+import phone from '../image/phone.jpg'
 import cat2 from '../image/cat2.png'
 import cat3 from '../image/cat3.png'
 import cat4 from '../image/cat4.png'
@@ -37,6 +43,30 @@ export const products: Product[] = [
     price : 143.05,
     description: 'desc',
     images : [frigo1,frigo2],
+    countStart : 4
+  },
+  {
+    id : 4,
+    name : 'Apple Cinema 30"',
+    price : 122,
+    description: 'desc',
+    images : [eau1,eau2],
+    countStart : 4
+  },
+  {
+    id : 1,
+    name : 'Fusce tristique cursus facilisis',
+    price : 602,
+    description: 'desc',
+    images : [talon1,talon2],
+    countStart : 4
+  },
+  {
+    id : 1,
+    name : 'MacBook Pro',
+    price : 2000,
+    description: 'desc',
+    images : [phone,sac],
     countStart : 4
   }
 ]
