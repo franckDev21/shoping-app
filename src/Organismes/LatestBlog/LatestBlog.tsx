@@ -59,9 +59,8 @@ const LatestBlog: FC<LatestBlogType> = ({ className = "" }) => {
     >
       <div className="flex -mx-3 pt-3">
         {blogs.map((blog, i) => (
-          <div className="w-1/3 px-3">
+          <div className="w-1/3 px-3" key={i}>
             <CardBlog
-              key={i}
               imgUrl={blog.url}
               className="text-center"
               title={blog.title}

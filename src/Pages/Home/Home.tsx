@@ -6,13 +6,13 @@ import MyImage from '../../Atoms/MyImage/MyImage'
 import Title from '../../Atoms/Title/Title'
 import ImageBox from '../../Melecules/ImageBox/ImageBox'
 import InputGroup from '../../Melecules/InputGroup/InputGroup'
-import ProductItem from '../../Melecules/ProductItem/ProductItem'
 
 import Phone from '../../image/cache/catalog/category/1-190x190.png'
 import Card from '../../Melecules/Card/Card'
 import HotCategory from '../../Organismes/HotCategory/HotCategory'
 import AuthLayout from '../../Templates/AuthLayout/AuthLayout'
 import { products } from '../../Utils/data'
+import ProductCard from '../../Melecules/ProductCard/ProductCard'
 
 type HomeType = {}
 
@@ -48,7 +48,7 @@ const Home:FC<HomeType> = () => {
 
         <MyImage className='bg-white shadow-md' url={Phone} alt='smartphone' />
 
-        <ProductItem
+        <ProductCard
           product={products[0]}
           className='my-4 shadow-md'
         />
