@@ -3,9 +3,8 @@ import { useNavigate } from "react-router-dom";
 import MyImage from "../../Atoms/MyImage/MyImage";
 import Text from "../../Atoms/Text/Text";
 import Product from "../../Models/product.model";
-import { extraiText, formatCurrency } from "../../Utils/functions";
+import { extraiText, formatCurrency, generateStar } from "../../Utils/functions";
 import IconProduct from "../IconProduct/IconProduct";
-import StarIcon from "../StarIcon/StarIcon";
 import './style.scss';
 
 type ProductCardType = {
@@ -19,17 +18,6 @@ const ProductCard: FC<ProductCardType> = ({ className = "", product, reduction }
 
   const goToPage = (url: string): void => {
     navigate(url);
-  };
-
-  const generateStar = (count: number): any[] => {
-    let tabStar = [];
-    for (let i = 0; i < count; i++) {
-      tabStar.push(<StarIcon active />);
-    }
-    for (let i = 0; i < 5 - count; i++) {
-      tabStar.push(<StarIcon />);
-    }
-    return tabStar;
   };
 
   return (
