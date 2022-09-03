@@ -22,11 +22,11 @@ const TrendingProduct: FC<TrendingProductType> = ({ className }) => {
         classBoxHeader='lg:flex lg:items-center lg:justify-between'
         header={
           <>
-            <nav className="mr-14 text-lg text-gray-800 w-1/2 ">
-              <Link className="mr-4 sm:mr-8 text-primary" to="/">
+            <nav className="mr-14 text-sm sm:text-lg text-gray-800 w-1/2 ">
+              <Link className="mr-3 sm:mr-8 text-primary" to="/">
                 Featured
               </Link>
-              <Link className="mr-4 sm:mr-8" to="/">
+              <Link className="mr-3 sm:mr-8" to="/">
                 Bestseller
               </Link>
               <Link to="/">Latest</Link>
@@ -36,7 +36,7 @@ const TrendingProduct: FC<TrendingProductType> = ({ className }) => {
           </>
         }
       >
-        <div className="grid  tablet:grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 tablet:grid-cols-3 gap-8">
           {products.map((product,i) => (
             <ProductCard key={i} product={product} />
           ))}

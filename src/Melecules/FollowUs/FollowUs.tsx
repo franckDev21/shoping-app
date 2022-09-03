@@ -14,7 +14,7 @@ type FollowUsType = {
 const FollowUs:FC<FollowUsType> = ({ className='' }) => {
   return (
     <div className={`${className}`}>
-      <h1 className="mb-4 w-full text-2xl font-semibold pb-3">Follow Us</h1>
+      <h1 className="mb-4 text-gray-700 w-full text-2xl font-semibold pb-3">Follow Us</h1>
       <div className="flex">
         <button
           style={{ boxShadow: "0px 0px 6px 0px rgb(4 0 0 / 10%)" }}

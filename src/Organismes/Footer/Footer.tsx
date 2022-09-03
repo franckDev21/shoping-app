@@ -183,7 +183,7 @@ const Footer: FC<FooterType> = ({ className = "" }) => {
             <div className="pt-3 flex flex-wrap -mx-2 pb-10">
               <div className="w-1/4 px-2">
                 <div>
-                  <h2 className="uppercase mb-4 font-semibold">INFORMATION</h2>
+                  <h2 className="uppercase mb-4 font-semibold text-gray-700">INFORMATION</h2>
 
                   <ul>
                     <li className="mb-3 text-gray-500">
@@ -204,7 +204,7 @@ const Footer: FC<FooterType> = ({ className = "" }) => {
 
               <div className="w-1/4 px-2">
                 <div>
-                  <h2 className="uppercase mb-4 font-semibold">MY ACCOUNT</h2>
+                  <h2 className="uppercase mb-4 font-semibold text-gray-700">MY ACCOUNT</h2>
 
                   <ul>
                     <li className="mb-3 text-gray-500">
@@ -225,7 +225,7 @@ const Footer: FC<FooterType> = ({ className = "" }) => {
 
               <div className="w-1/4 px-2">
                 <div>
-                  <h2 className="uppercase mb-4 font-semibold">EXTRAS</h2>
+                  <h2 className="uppercase mb-4 font-semibold text-gray-700">EXTRAS</h2>
 
                   <ul>
                     <li className="mb-3 text-gray-500">
@@ -243,7 +243,7 @@ const Footer: FC<FooterType> = ({ className = "" }) => {
 
               <div className="w-1/4 px-2">
                 <div>
-                  <h2 className="uppercase mb-4 font-semibold">
+                  <h2 className="uppercase mb-4 font-semibold text-gray-700">
                     CUSTOMER SERVICE
                   </h2>
 

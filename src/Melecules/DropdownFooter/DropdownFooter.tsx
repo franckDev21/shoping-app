@@ -21,7 +21,7 @@ const DropdownFooter: React.FC<DropdownFooterType> = ({
     <div
       className={`${className} dorpdown-footer w-full ${show ? "active" : ""}`}
     >
-      <h2 className={`uppercase mb-4 font-semibold flex justify-between items-center`}>
+      <h2 className={`uppercase mb-4 font-semibold text-gray-700 flex justify-between items-center`}>
         <span>{title}</span>
         <span onClick={() => setShow(!show)} className='cursor-pointer'>
           {!show ? <ImPlus /> : <ImMinus />}
