@@ -9,7 +9,10 @@ type CardType = {
   className?: string;
   line?: boolean;
   style?: any;
-  classTitle ?: string
+  classTitle?: string;
+  classHeader?: string;
+  classBoxHeader?: string;
+  typeHeaderIsFlex?: boolean;
 };
 
 const Card: FC<CardType> = ({
@@ -19,16 +22,21 @@ const Card: FC<CardType> = ({
   className,
   line = false,
   style = {},
-  classTitle=''
+  classTitle = "",
+  classHeader = "",
+  classBoxHeader = "",
+  typeHeaderIsFlex = true,
 }) => {
   return (
     <div
       style={style}
       className={`${className} bg-white py-5 px-5 rounded-md shadow-lg`}
     >
-      <div className="flex justify-between items-center text-2xl text-bold text-gray-700">
-        <Title className={`${classTitle}`}>{name}</Title>
-        <div className="flex items-center">{header}</div>
+      <div className={`${typeHeaderIsFlex && 'flex justify-between items-center'} ${classBoxHeader} md:text-2xl text-bold text-gray-700`}>
+        <Title className={`${classTitle} text-[1.38rem] sm:text-[1.68rem]`}>
+          {name}
+        </Title>
+        <div className={`flex items-center justify-between ${classHeader}`}>{header}</div>
       </div>
       {line && (
         <Text className="block h-[1px] bg-gray-300 bg-opacity-50 w-full my-3"></Text>

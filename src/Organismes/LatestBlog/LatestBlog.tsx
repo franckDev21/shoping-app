@@ -7,6 +7,7 @@ import CardBlog from "../../Melecules/CardBlog/CardBlog";
 import BlogOne from "../../image/blog1.jpg";
 import BlogTwo from "../../image/blog2.jpg";
 import BlogThree from "../../image/blog3.jpg";
+import { extraiText } from "../../Utils/functions";
 
 type LatestBlogType = {
   className?: string;
@@ -57,13 +58,13 @@ const LatestBlog: FC<LatestBlogType> = ({ className = "" }) => {
         </Text>
       }
     >
-      <div className="flex -mx-3 pt-3">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-3">
         {blogs.map((blog, i) => (
-          <div className="w-1/3 px-3" key={i}>
+          <div className="" key={i}>
             <CardBlog
               imgUrl={blog.url}
               className="text-center"
-              title={blog.title}
+              title={extraiText(blog.title,41)}
               content={blog.content}
             />
           </div>

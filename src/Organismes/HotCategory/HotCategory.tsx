@@ -34,6 +34,7 @@ const HotCategory:FC<HotCategoryType> = ({ className='' }) => {
       style={{ boxShadow: `0px 0px 6px 0px rgb(4 0 0 / 10%)` }}
       name='Hot Categories'
       line
+      classTitle=''
       className={`${className}`}
       header={
         <Text>
@@ -42,12 +43,13 @@ const HotCategory:FC<HotCategoryType> = ({ className='' }) => {
         </Text>
       }
     >
-      <div className="grid grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
         {hotCategories.map(category => (
           <ImageBox 
             key={category.id}
             url={category.image}
             name={category.name}
+            classImg='md:h-auto md:w-auto sm:w-36 sm:h-36 h-24 w-24'
             onClick={e => {
               navigate(`/category/${category.id}/show`)
             }}

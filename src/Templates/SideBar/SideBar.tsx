@@ -25,7 +25,7 @@ const SideBar: FC<SideBarType> = ({ children, className }) => {
     <div className={`${className}`}>
       {children}
 
-      <PubCard url={SideBar1} />
+      <PubCard className="hidden md:block" url={SideBar1} />
 
       <SideBarCard name="On Sale" className="my-6">
         <div className="p-3">
@@ -42,7 +42,7 @@ const SideBar: FC<SideBarType> = ({ children, className }) => {
       </SideBarCard>
 
       {/* Pub card */}
-      <PubCard url={SideBar2} className="mt-6" />
+      <PubCard url={SideBar2} className="md:mt-6 hidden md:block" />
 
       {/* Testimonials */}
       <SideBarCard name="Testimonials" className="my-6">

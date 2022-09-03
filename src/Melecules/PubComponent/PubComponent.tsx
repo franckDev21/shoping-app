@@ -10,7 +10,7 @@ type PubComponentType = {
 
 const PubComponent: FC<PubComponentType> = ({ className='' }) => {
   return (
-    <div className={`${className} grid grid-cols-3 gap-8`}>
+    <div className={`${className} grid sm:grid-cols-3 gap-4 md:gap-8`}>
       <PubCard url={Pub1} />
       <PubCard url={Pub2} />
       <PubCard url={Pub3} />

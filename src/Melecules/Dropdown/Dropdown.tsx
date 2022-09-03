@@ -21,7 +21,7 @@ const Dropdown: FC<DropdownTypes> = ({
   );
 
   return (
-    <div className="relative  flex flex-col justify-end items-end">
+    <div className={`relative  flex flex-col justify-end items-end ${className}`}>
       <div className="cursor-pointer" onClick={() => setShow(!show)}>
         {curentValue ? (
           <div className="flex items-center">
@@ -49,7 +49,7 @@ const Dropdown: FC<DropdownTypes> = ({
         className={`absolute z-10 top-full transition-opacity translate-y-1 w-[180px] flex flex-col justify-start shadow-md p-3 bg-white rounded-md 
         ${classNameDropdown}
         ${
-          show ? "" : "opacity-0 pointer-events-none"
+          !show && "opacity-0 pointer-events-none"
         }`}
       >
         {dropdownItems.map((item, i) => (

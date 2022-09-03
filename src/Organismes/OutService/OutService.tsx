@@ -9,7 +9,7 @@ type OutServiceType = {
 
 const OutService:FC<OutServiceType>= ({ className }) => {
   return (
-    <Card className={`bg-transparent shadow-none ${className}`}>
+    <Card className={`bg-transparent shadow-none px-0 ${className}`}>
       <div
         className="container bg-white flex-col justify-start items-start md:flex-row rounded-lg flex md:justify-between px-8 md:px-16 py-[1.6rem] border md:items-center text-gray-500"
         style={{ boxShadow: `0px 0px 6px 0px rgb(4 0 0 / 10%)` }}

@@ -10,8 +10,8 @@ type SpecialProductType = {
 const SpecialProduct:FC<SpecialProductType> = ({ className='' }) => {
 
   return (
-    <Card className={`${className}`} classTitle='text-[1.68rem]' name='Special Products' line>
-      <div className="grid grid-cols-3 gap-8">
+    <Card className={`${className}`} classTitle='' name='Special Products' line>
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
         <ProductCard reduction product={oneProduct} />  
       </div>
     </Card>

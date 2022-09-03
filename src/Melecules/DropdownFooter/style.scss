@@ -1,0 +1,26 @@
+.dorpdown-footer{
+  &__content{
+    transition: all .4s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  &.active{
+    .dorpdown-footer__content{
+      max-height: 400px;
+    }
+  }
+  
+}
+
+
+#menu #list {
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+  background: #d5d5d5;
+}
+
+#menu:hover #list {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+}

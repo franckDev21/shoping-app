@@ -17,8 +17,8 @@ const ImageBox:FC<ImageBoxType> = ({ url, className='', classImg='', classHoverE
     <div className={`${style.ImageBox} overflow-hidden flex flex-col justify-center items-center relative ${className}`}>
       <MyImage onClick={(e) => onClick(e)} className={`${classImg} mb-1 cursor-pointer border border-red-500 border-dashed border-opacity-0 hover:border-opacity-100`} url={url} />
 
-      <Text className='text-lg font-semibold text-gray-500'>{name ? name : 'Smartphones'}</Text>
-      <Text onClick={(e) => onClick(e)} className={`${classHoverElement} text-lg w-full absolute left-0 text-center  bottom-0 z-20 text-red-400 underline cursor-pointer`}>Wiew more</Text>
+      <Text className='text-xs text-center md:text-sm lg:text-lg font-semibold text-gray-500'>{name ? name : 'Smartphones'}</Text>
+      <Text onClick={(e) => onClick(e)} className={`${classHoverElement} text-xs md:text-sm lg:text-lg w-full absolute left-0 text-center  bottom-0 z-20 text-red-400 underline cursor-pointer`}>Wiew more</Text>
     </div>
   )
 }

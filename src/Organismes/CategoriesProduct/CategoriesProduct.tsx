@@ -7,7 +7,7 @@ type CategoriesProductType = {
 
 const CategoriesProduct: FC<CategoriesProductType> = ({ className='' }) => {
   return (
-    <Card className={`${className} text-[1.7rem]`} classTitle='text-[1.68rem]' name='Categories Products' line>
+    <Card className={`${className} text-[1.7rem]`} classTitle='' name='Categories Products' line>
 
     </Card>
   )

@@ -10,8 +10,8 @@ type DealOfTheDayCardType = {
 const DealOfTheDayCard:FC<DealOfTheDayCardType> = ({ className='' }) => {
   
   return (
-    <Card className={`${className}`} classTitle='text-[1.68rem]' name='Deal Of The Day' line>
-      <div className="grid grid-cols-2 gap-8">
+    <Card className={`${className}`} classTitle='' name='Deal Of The Day' line>
+      <div className="grid lg:grid-cols-2 gap-8">
         <ProductDelayCard product={oneProduct} />
       </div>
     </Card>

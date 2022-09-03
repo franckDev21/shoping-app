@@ -20,19 +20,19 @@ const All = () => {
       Topcontent={
         <>
           {/* banner */}
-          <Banner className="mb-10 " />
+          <Banner className="mb-2 md:mb-8 lg:mb-10 " />
           {/* Services */}
-          <OutService className="mb-10 bg-white" />
+          <OutService className="mb-2 md:mb-8 lg:mb-10  bg-white" />
 
           {/* out categories */}
-          <div className="container mb-10">
-            <HotCategory className="my-5" />
+          <div className="container mb-6 md:mb-8 lg:mb-10 ">
+            <HotCategory className="" />
           </div>
         </>
       }
       Bottomcontent={
         <>
-          <div className="container mb-10">
+          <div className="container mb-2 md:mb-8 lg:mb-10 ">
             <LatestBlog />
           </div>
 
@@ -46,19 +46,19 @@ const All = () => {
       <TrendingProduct />
 
       {/* pub row */}
-      <PubComponent className="mt-20" />
+      <PubComponent className="mt-5 md:mt-8 lg:mt-10" />
 
       {/* Deal Of The Day */}
-      <DealOfTheDayCard className="mt-14" />
+      <DealOfTheDayCard className="mt-5 md:mt-8 mb-4 md:mb-8 lg:mb-10" />
 
       {/* Categories Products */}
-      <CategoriesProduct className="mt-14"   />
+      <CategoriesProduct className="mt-5 md:mt-8 lg:mt-14"   />
 
       {/* flyer pub */}
-      <PubCard url={Flyer} className='mt-20' />
+      <PubCard url={Flyer} className='mt-5 md:mt-8 lg:mt-20' />
 
       {/* Deal Of The Day */}
-      <SpecialProduct className="mt-14" />
+      <SpecialProduct className="mt-5 md:mt-8 lg:mt-14" />
 
     </AuthLayout>
   );
